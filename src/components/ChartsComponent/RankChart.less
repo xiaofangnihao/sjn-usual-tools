@@ -1,0 +1,79 @@
+.rank {
+  border: 10px solid #000;
+  margin: auto;
+  width: 1000px;
+  height: 500px;
+  background-color: #031831;
+
+  &-item {
+    display: flex;
+    color: #fff;
+    align-items: center;
+    margin-top: 20px;
+
+    &-num {
+      width: 20px;
+    }
+
+    &-name {
+      padding: 0 20px;
+      width: 50px;
+    }
+
+    &-progress {
+      overflow: hidden;
+      width: 500px;
+      height: 10px;
+      background-color: #fff;
+      border-radius: 20px;
+
+      &-child {
+        border-radius: 20px 0 0 20px;
+        background-color: blue;
+        width: 400px;
+        height: 10px;
+      }
+    }
+
+    &-data {
+      margin-left: 50px;
+    }
+  }
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  /*定义进入开始和离开结束的透明度为0*/
+  //   animation: fadeOut 1s linear;
+}
+
+.fade-enter-to,
+.fade-leave-from {
+  /*定义进入结束和离开开始的透明度为1*/
+  animation: fadeIn 1s linear;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  /*定义进入和离开过渡状态的透明度变化的时间和变化曲线*/
+  //   transition: opacity 1.5s ease;
+  //   animation: fadeOut 1s linear;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}

@@ -1,0 +1,122 @@
+/* Normalizes margin,padding */
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+/* Normalizes font-size for headers */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+}
+
+/* Removes list-style from lists */
+ol,
+ul {
+    list-style: none;
+}
+
+/* Normalizes font-size and font-weight to normal */
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+    font-size: normal;
+    font-weight: normal;
+}
+
+/* Removes list-style from lists */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Removes border from fieldset and img */
+fieldset,
+img {
+    border: 0;
+}
+
+/* Left-aligns text in caption and th */
+caption,
+th {
+    text-align: left;
+}
+
+/* Removes quotation marks from q */
+q:before,
+q:after {
+    content: ”;
+}
+
+i {
+    font-style: normal;
+}
+
+html,
+body {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+.ie body {
+    scrollbar-base-color: rgba(0, 0, 0, 0.08);
+    scrollbar-base-color: rgba(0, 0, 0, 0.08);
+    scrollbar-3dlight-color: rgba(0, 0, 0, 0.08);
+    scrollbar-highlight-color: rgba(0, 0, 0, 0.08);
+    scrollbar-track-color: rgba(0, 0, 0, 0.06);
+    scrollbar-arrow-color: black;
+    scrollbar-shadow-color: rgba(0, 0, 0, 0.08);
+    scrollbar-dark-shadow-color: rgba(0, 0, 0, 0.08);
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.overflow::-webkit-scrollbar,
+.webkit body::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+.overflow::-webkit-scrollbar-track,
+.webkit body::-webkit-scrollbar-track {
+    border-radius: 3px;
+    background: rgba(0, 0, 0, 0.06);
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.08);
+}
+
+.overflow::-webkit-scrollbar-thumb,
+.webkit body::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background: rgba(0, 0, 0, 0.12);
+    -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
